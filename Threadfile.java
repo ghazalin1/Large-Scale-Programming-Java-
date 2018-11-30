@@ -4,12 +4,12 @@ import java.util.* ;
 
 import javax.swing.* ;
 
-public class Worksheet7 extends JFrame implements Runnable , ActionListener {
+public class Threadfile extends JFrame implements Runnable , ActionListener {
 	JButton StartBtn , StopBtn ;
 	JLabel Shape1Lbl , Shape2Lbl , Shape3Lbl , WinLbl , LoseLbl, lbl3 ;
 	JPanel ShapesPanel ;
 	Thread ThreadObject001 ;
-	static Worksheet7 ClassAObjctA ;
+	static Threadfile ClassAObjctA ;
 	String [] Options = { "A" , "B" , "C" , "D" , "E", "F", "G", "H" ,"I", "J" } ;
 	Random RndmVariable = new Random ( ) ;
 	int RndmNumber1 = RndmVariable.nextInt( Options.length ) ;
@@ -19,7 +19,7 @@ public class Worksheet7 extends JFrame implements Runnable , ActionListener {
 	int timer=0;
 	
 	
-	public Worksheet7 ( ) {
+	public Threadfile ( ) {
 		setLayout ( null ) ;
 		setSize ( 500 , 500 ) ;
 		setLocation (700, 400);
@@ -96,7 +96,7 @@ public class Worksheet7 extends JFrame implements Runnable , ActionListener {
 	}
 	public static void main ( String [] args ) {
 
-		ClassAObjctA = new Worksheet7 ( ) ;
+		ClassAObjctA = new Threadfile ( ) ;
 
 	}
 	@Override
